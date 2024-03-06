@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #f1f0f0;
+}
+
+.section-p1 {
+    padding: 90px 80px;
+}
+
+.section-p2 {
+    padding: 40px 80px;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #fff; 
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #CDF0EA;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #91D0C0;
+}
+
+#navbar button {
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #91D0C0;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#navbar button:hover {
+    background-color: #6bb5a2;
+}
+
+#list {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#main-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#main-page .content-wrapper {
+    margin-right: 20px;
+}
+
+#main-page .main-image {
+    height: 92vh;
+    width: 42%;
+}
+
+#main-page h2 {
+    color: #91D0C0;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    margin-left: 15%;
+}
+
+#main-page h4 {
+    padding-top: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 6%;
+    text-align: center;
+}
+
+#strange-image {
+    text-align: center;  
+}
+
+#strange-image .strange-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#strange-image .arka {
+    color: #CDF0EA;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px 0 ;
+    border-radius: 25px;
+    cursor: pointer; 
+    margin: 15px 0;
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+#strange-image .arka:hover {
+    transform: scale(1.1);
+}
+
+#strange-image .arka1 {
+    width: 90%;
+    height: 90%;
+    border-radius: 0 0 0 180px;
+}
+
+#strange-image .arka2 {
+    width: 90%;
+    height: 90%;
+    border-radius: 120px 120px 0 0;
+}
+
+#strange-image .arka3 {
+    width: 90%;
+    height: 90%;
+    border-radius: 0 180px 0 0;
+}
+
+
+#strange-image .arka .arka-text {
+    text-align: center;
+    padding: 15px 0;
+}
+
+#strange-image .arka .arka-text h5 {
+    padding-top: 7px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#long-short-images {
+    text-align: center;
+}
+
+#long-short-images .long-short-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 90px;
+}
+
+#long-short-images .long-images {
+    position: relative;
+    width: 65%;
+    height: 40vh;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#long-short-images .long-images:hover {
+    transform: scale(1.03);
+}
+
+#long-short-images .long-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#long-short-images .long-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    top: 30%;
+    color: #fff;
+    padding: 30px;
+}
+
+#long-short-images .long-text h3 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#long-short-images .long-text h5 {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#long-short-images .long-text button {
+    width: 90px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #91D0C0;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#long-short-images .long-text button:hover {
+    background-color: #6bb5a2;
+}
+
+#long-short-images .short-images {
+    position: relative;
+    width: 35%;
+    height: 40vh;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#long-short-images .short-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    top: 30%;
+    color: #fff;
+    padding: 30px;
+}
+
+#long-short-images .short-text h3 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#long-short-images .short-text h5 {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#long-short-images .short-text button {
+    width: 90px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #91D0C0;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#long-short-images .short-text button:hover {
+    background-color: #6bb5a2;
+}
+
+#long-short-images .short-images:hover {
+    transform: scale(1.03);
+}
+
+#long-short-images .short-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #CDF0EA;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-col  ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col  ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 200;
+    color: #91D0C0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-col  ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #91D0C0;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #91D0C0;
+    background-color: #fff;
+}
+
+/* LOG IN PAGE */
+
+#form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    background: #CDF0EA;
+    border: 2px solid #CDF0EA;
+    transform: translate(-50%, -50%);
+}
+
+#form-popup .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #91D0C0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form-popup .close-btn:hover {
+    color: #6bb5a2;
+}
+
+#form-popup .form-box {
+    display: flex;
+}
+
+#form-popup .form-details {
+    max-width: 330px;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #91D0C0;
+}
+
+#form-popup h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#form-popup .form-content {
+    width: 100%;
+    padding: 35px;
+}
+
+#form-popup form .input-field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+#form-popup form .input-field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border-radius: 20px;
+    border: none;
+}
+
+#form-popup form .input-field input:is(:focus, :valid) {
+    padding: 16px 15px 0;
+}
+
+#form-popup form .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #9f9f9f;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+
+#form-popup form .input-field input:is(:focus, :valid) ~ label {
+    font-size: 0.75rem;
+    transform: translateY(-120%);
+    color: #91D0C0;
+}
+
+#form-popup a {
+    color: #91D0C0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form-popup a:hover {
+    color: #6bb5a2;
+}
+
+#form-popup :where(.forgot-pass, .policy-text) {
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+#form-popup form button {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 20px;
+    margin: 25px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #91D0C0;
+}
+
+#form-popup form button:hover {
+    background: #6bb5a2;
+}
+
+#form-popup .bottom-link {
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+#form-popup .policy-text {
+    display: flex;
+    align-items: center;
+}
+
+#form-popup .policy-text input {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+}
+
+@media (max-width: 799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #navbar li a {
+        color: #CDF0EA;
+    }
+
+    #list {
+        display: flex;
+        align-items: center;
+    }
+
+    #list i {
+        color: #91D0C0;
+        font-size: 24px;
+        padding-left: 20px;
+        transition: 0.3s;
+    }
+
+    #list i:hover {
+        color: #6bb5a2;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #1a1a1a;
+        font-size: 20px;
+    }
+
+    #close:hover {
+        color: #6bb5a2;
+    }
+}
+
